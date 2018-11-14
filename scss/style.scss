@@ -405,3 +405,87 @@ html, body {
     }
   }
 }
+
+#counters-section {
+  background-image: url(../images/parallax2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .counters-wrapper {
+    margin: 100px auto;
+    text-align: center;
+    color: $white;
+
+    .counters-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+      li {
+
+        i {
+          font-size: 3em;
+          padding-bottom: 15%;
+        }
+  
+        h4 {
+          font-family: "Crete Round", sans-serif;
+          font-size: 3em;
+          letter-spacing: .05em;
+          font-weight: 400;
+          margin: auto 0;
+        }
+  
+        p {
+          text-transform: uppercase;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+#subscribe-section {
+  .subscribe-wrapper {
+    margin: 100px auto;
+    text-align: center;
+
+    h4 {
+      font-size: 1.5em;
+    }
+
+    .subscribe-description {
+      font-size: 1.063em; 
+      color: $grey-text;
+      line-height: 1.875em;
+    }
+
+    .button-wrapper { 
+      text-align: center;
+      margin: 3rem 0;
+
+      .button {
+        font-size: 0.8em;
+        font-weight: 600;
+        padding: 1em 1.5em;
+        color: $white;
+        border: 2px solid $main;
+        border-color: $main;
+        background-color: $main;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          border-color: $main;
+          background-color: transparent;
+          color: $main;
+          transition: background-color .3s ease-in-out;
+        }
+      }
+    }
+  }
+}
