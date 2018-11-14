@@ -35,6 +35,12 @@ html, body {
   clear: both;
 }
 
+.circle{
+	border-radius: 50%;
+	margin: 0.15em;
+	font-size: 1.2em;
+}
+
 .right {
   right: 0;
   left: auto;
@@ -487,5 +493,143 @@ html, body {
         }
       }
     }
+  }
+}
+
+#main-footer {
+  background-color: $grey;
+
+  .footer-wrapper {
+    margin: 100px auto;
+
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .footer-item {
+        width: 25%; 
+        border-left: 1px solid #444;
+
+        .footer-item-wrapper {
+          padding: 0 30px;
+
+          .first-column-description {
+            font-size: .8em;
+            color: $grey-desc;
+            line-height: 2em;
+          }
+  
+          .social-container {
+            .social-list {
+              margin: 0;
+              padding-left: 0;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              list-style: none;
+
+              li {
+                padding-right: 5px;
+
+                .fa-facebook-f, .fa-twitter {
+                  background: $main;
+                  color: $grey;
+                }
+        
+                .fa-facebook-f {
+                  padding: 0.05em 0.3em;
+                }
+        
+                .fa-twitter{
+                  padding: 0.05em 0.07em;
+                }
+        
+                .fa-pinterest, .fa-google-plus{
+                  font-size: 1.5em;
+                  color: $main;
+                  padding: 0.05em 0.07em;
+                }
+              }
+            }
+          }
+        
+          .img-list {
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            li {
+              margin: 0 10px 10px 0px;
+            }
+          }
+
+          .flickr-wrapper {
+            
+            a {
+              text-decoration: none;
+              color: $grey-text;
+              font-size: 0.7em;
+
+              .flickr-string {
+                display: flex;
+                align-items: center;
+
+                img {
+                  padding-right: 2px;
+                }
+              }
+
+              &:hover {
+                color: $white;
+              }
+            }
+          }
+        }
+      
+        .first-column {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          border: none;
+        }
+
+        .footer-item-heading {
+          color: $white;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 700;
+          line-height: 1.625em;
+          margin-top: 0;
+        }
+
+        .footer-list {
+          list-style: none;
+          padding-left: 0;
+
+          li {
+            a{
+              font-size: .8em;
+              color: $grey-desc;
+              text-decoration: none;
+              line-height: 2.5em;
+            
+              &:hover {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}
+#copiright {
+  .copiright-heading {
+    text-align: center;
+    color: $grey-text;
   }
 }
