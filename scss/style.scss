@@ -518,6 +518,7 @@ html, body {
             font-size: .8em;
             color: $grey-desc;
             line-height: 2em;
+            padding: 10% 0;
           }
   
           .social-container {
@@ -567,7 +568,7 @@ html, body {
           }
 
           .flickr-wrapper {
-            
+
             a {
               text-decoration: none;
               color: $grey-text;
@@ -588,38 +589,46 @@ html, body {
             }
           }
         }
-      
-        .first-column {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: flex-start;
-          border: none;
-        }
 
-        .footer-item-heading {
-          color: $white;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          font-weight: 700;
-          line-height: 1.625em;
-          margin-top: 0;
-        }
+        // &:n-th-child(1){
+        //   height: 80%;
+        //   display: flex;
+        //   flex-direction: column;
+        //   justify-content: space-between;
+        //   align-items: flex-start;
+        // }
+      }
+    
+      .first-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: none;
+      }
 
-        .footer-list {
-          list-style: none;
-          padding-left: 0;
+      .footer-item-heading {
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        line-height: 1.625em;
+        margin-top: 0;
+      }
 
-          li {
-            a{
-              font-size: .8em;
-              color: $grey-desc;
-              text-decoration: none;
-              line-height: 2.5em;
+      .footer-list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          a{
+            font-size: .8em;
+            color: $grey-desc;
+            text-decoration: none;
+            line-height: 2.5em;
             
-              &:hover {
-                color: $white;
-              }
+            &:hover {
+              color: $white;
             }
           }
         }
@@ -627,6 +636,7 @@ html, body {
     }
   }  
 }
+
 #copiright {
   .copiright-heading {
     text-align: center;
