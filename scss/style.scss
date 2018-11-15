@@ -305,9 +305,9 @@ html, body {
     li {
       width: 25%;
       float: left;
-      display: inline-block;
       position: relative;
       overflow: hidden;
+      line-height: 0;
       
       img {
         width: 100%;
