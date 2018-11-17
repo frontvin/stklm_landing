@@ -728,3 +728,168 @@ html, body {
     }
   }
 }
+
+@media only screen and (max-width: 801px) {
+  
+  #about-section {
+    .about-items-wrapper {
+      display: flex;
+      flex-direction: column;
+  
+      .about-item {
+        width: 80%;
+
+        h5 {
+          text-transform: uppercase;
+          margin: 5% 0 1.5em;
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    .portfolio-list {
+      li {
+        width: 50%;
+      }
+    }
+  }
+
+  #text-col-section {
+    .col-wrapper {
+      .text-items-list {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  #counters-section {
+    .counters-wrapper {
+      .counters-list {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+          
+        }
+      }
+    }
+  }
+
+  #subscribe-section {
+    .subscribe-wrapper {
+  
+      h4 {
+        font-size: 2em;
+      }
+  
+      .subscribe-description {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #banner {
+    .banner-wrapper {
+      .banner-content {    
+        .title {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    .portfolio-list {
+      li {
+        width: 100%;
+      }
+    }
+  }
+
+  #text-col-section {
+    .col-wrapper {
+      .text-items-list {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  #counters-section {
+    .counters-wrapper {
+      .counters-list {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+          
+        }
+      }
+    }
+  }
+
+  #subscribe-section {
+    .subscribe-wrapper {
+  
+      h4 {
+        font-size: 2em;
+      }
+  
+      .subscribe-description {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #main-footer {
+    .footer-wrapper {
+      footer {
+        display: flex;
+        flex-direction: column;
+  
+        .footer-item {
+          width: 100%; 
+          border-left: none;
+  
+          .footer-item-wrapper {
+            padding: 0 30px;
+  
+            .first-column-description {
+              font-size: .8em;
+              padding: 3% 0;
+            }
+          }
+        }
+
+        .first-column {
+          padding-bottom: 5%;
+        }
+      }
+    }  
+  }
+}
