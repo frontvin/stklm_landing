@@ -127,7 +127,7 @@ html, body {
         letter-spacing: 5px;
         text-transform: uppercase;
         font-weight: 700;
-        margin: 0 auto 14px auto;
+        margin: 0 auto 5% auto;
       }
   
       .sub-title {
@@ -141,7 +141,7 @@ html, body {
   
       .button-wrapper { 
         text-align: center;
-        margin: 3rem 0;
+        margin: 3em 0;
   
         .button {
           font-size: 0.8em;
@@ -912,84 +912,29 @@ html, body {
     }
   }
 
-  #portfolio {
-    .portfolio-list {
-      li {
-        width: 100%;
+}
+
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+
+  #banner {
+    .banner-wrapper {
+      .banner-content {    
+        .sub-title {
+          font-size: 1em;
+        }
+
+        .title {
+          font-size: 1.7em;
+        }
       }
-    }
-  }
 
-  #text-col-section {
-    .col-wrapper {
-      .text-items-list {
-        display: flex;
-        flex-direction: column;
-
+      .slider_buttons {
+            
         li {
-          width: 80%;
+          width: 5px;
+          height: 5px;
         }
       }
     }
   }
-
-  #counters-section {
-    .counters-wrapper {
-      .counters-list {
-        display: flex;
-        flex-direction: column;
-        
-        li {
-          margin-bottom: 15px;
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-          
-        }
-      }
-    }
-  }
-
-  #subscribe-section {
-    .subscribe-wrapper {
-  
-      h4 {
-        font-size: 2em;
-      }
-  
-      .subscribe-description {
-        width: 80%;
-        margin: 0 auto;
-      }
-    }
-  }
-
-  #main-footer {
-    .footer-wrapper {
-      footer {
-        display: flex;
-        flex-direction: column;
-  
-        .footer-item {
-          width: 100%; 
-          border-left: none;
-  
-          .footer-item-wrapper {
-            padding: 0 30px;
-  
-            .first-column-description {
-              font-size: .8em;
-              padding: 3% 0;
-            }
-          }
-        }
-
-        .first-column {
-          padding-bottom: 5%;
-        }
-      }
-    }  
-  }
-
 }
